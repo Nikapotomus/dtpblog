@@ -26,8 +26,8 @@ foreach($post_dir as $post){
   $postContents[] = explode( "--", file_get_contents(__DIR__ . "/posts/" . $post));
 }
 
-$renderVariables[] = $postContents;
-$renderVariables[] = $post_dir;
+$renderVariables["posts_dir"] = $post_dir;
+$renderVariables["post_contents"] = $postContents;
 
 var_dump($renderVariables);
 

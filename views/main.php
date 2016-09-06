@@ -84,31 +84,26 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+              <?php foreach($post_contents as $key => $pc) { ?>
+
                 <div class="post-preview">
                     <a href="post.html">
                         <h2 class="post-title">
-                            Man must explore, and this is exploration at its greatest
+                            <?= $pc[0] ?>
                         </h2>
                         <h3 class="post-subtitle">
-                            Problems look mighty small from 150 miles up
+                            <?= $pc[1] ?>
                         </h3>
                     </a>
-                    <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 24, 2014</p>
+                    <p class="post-meta">Posted by <a href="https://github.com/Nikapotomus">Nikola</a> <?= $pc[2] ?></p>
                 </div>
 
-                <!-- if not last then hard rule -->
-                <hr>
+                <?php if(!count($post_contents)== $key){ ?>
+                  <hr>
+                <?php } ?>
 
-
-                <div class="post-preview">
-                    <a href="post.html">
-                        <h2 class="post-title">
-                            I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
-                        </h2>
-                    </a>
-                    <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 18, 2014</p>
-                </div>
-
+              <?php } ?>
 
             </div>
         </div>
