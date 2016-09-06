@@ -70,9 +70,9 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="post-heading">
-                        <h1><?= $post_contents[0][0] ?></h1>
-                        <h2 class="subheading"><?= $post_contents[0][1] ?></h2>
-                        <span class="meta">Posted by <a href="https://github.com/Nikapotomus">Nikola</a> <?= $post_contents[0][2] ?></span>
+                        <h1><?= $post_contents[$post_id][0] ?></h1>
+                        <h2 class="subheading"><?= $post_contents[$post_id][1] ?></h2>
+                        <span class="meta">Posted by <a href="https://github.com/Nikapotomus">Nikola</a> <?= $post_contents[$post_id][2] ?></span>
                     </div>
                 </div>
             </div>
@@ -84,21 +84,22 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <p><?= $post_contents[0][3] ?><p>
+                    <p><?= $post_contents[$post_id][3] ?><p>
 
-                    <h2 class="section-heading">The Final Frontier</h2>
+                    <!-- <h2 class="section-heading">The Final Frontier</h2> -->
 
-                    <p></p>
+                    <p><?= $post_contents[$post_id][4] ?></p>
+                    <p><?= $post_contents[$post_id][5] ?></p>
 
-                    <blockquote></blockquote>
+                    <blockquote><?= $post_contents[$post_id][6] ?></blockquote>
 
 
-                    <a href="#">
-                        <img class="img-responsive" src="views/img/post-sample-image.jpg" alt="">
+                    <!-- <a href="#">
+                        <img class="img-responsive" src="" alt="">
                     </a>
-                    <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
+                    <span class="caption text-muted"></span>
 
-                    <p></p>
+                    <p></p> -->
                 </div>
             </div>
         </div>
