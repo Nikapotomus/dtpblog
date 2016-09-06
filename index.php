@@ -19,6 +19,12 @@ foreach($post_dir as $key => $post){
     unset($post_dir[$key]);
   }
 }
+
+foreach($post_dir as $post){
+  $postContents = file_get_contents(__DIR__ . "/posts/" . $post);
+  var_dump($postContents);
+}
+
 var_dump($post_dir);
 
 
