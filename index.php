@@ -14,6 +14,7 @@ $renderVariables = [];
 //read in posts dir and filter . + .. items
 $post_dir = scandir(__DIR__ . "/posts");
 
+//lets not name anything under 3 characters long
 foreach($post_dir as $key => $post){
   if (strlen($post) < 3) {
     unset($post_dir[$key]);
