@@ -26,8 +26,10 @@ foreach($post_dir as $post){
   $postContents[] = explode( "--", file_get_contents(__DIR__ . "/posts/" . $post));
 }
 
-var_dump($postContents);
-var_dump($post_dir);
+$renderVariables[] = $postContents;
+$renderVariables[] = $post_dir;
+
+var_dump($renderVariables);
 
 
 $view = new View(__DIR__ . "/views");
