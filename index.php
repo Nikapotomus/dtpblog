@@ -10,6 +10,20 @@ use Nikapotomus\blog\View;
 $underConstructon = false;
 $renderVariables = [];
 
+
+//read in posts dir and filter . + .. items
+$post_dir = scandir(__DIR__ . "/posts");
+
+foreach($post_dir as $key => $post){
+  if (strlen($post) < 3) {
+    unset($post_dir[$key]);
+  }
+}
+var_dump($post_dir);
+
+
+
+
 $view = new View(__DIR__ . "/views");
 
 $view->render("main", $renderVariables);
