@@ -31,7 +31,7 @@ if(!empty($post_dir)){
 
 $view = new View(__DIR__ . "/views");
 
-$view->render("main", $renderVariables);
+$view->render("post", $renderVariables);
 
 exit(0);
 ?>
