@@ -14,21 +14,20 @@ $renderVariables = [];
 //read in posts dir and filter . + .. items
 $post_dir = scandir(__DIR__ . "/posts");
 
-//lets not name anything under 3 characters long
+//lets not name anything under 2 characters long
 foreach($post_dir as $key => $post){
-  if (strlen($post) < 3) {
+  if (strlen($post) < 2) {
     unset($post_dir[$key]);
   }
 }
 
+//gets the contents of the posts
 foreach($post_dir as $post){
-  $postContents = file_get_contents(__DIR__ . "/posts/" . $post);
-  var_dump($postContents);
+  $postContents[] = explode( "--", file_get_contents(__DIR__ . "/posts/" . $post));
 }
 
+var_dump($postContents);
 var_dump($post_dir);
-
-
 
 
 $view = new View(__DIR__ . "/views");
