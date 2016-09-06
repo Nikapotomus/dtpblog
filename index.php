@@ -1,11 +1,13 @@
 <?php
 
+echo("aaa");
+die();
+
 include(__DIR__ . '/settings.php');
 include(__DIR__ . '/vendor/autoload.php');
 
 
 use Nikapotomus\blog\View;
-
 
 $underConstructon = false;
 $renderVariables = [];
@@ -17,7 +19,7 @@ $post_dir = scandir(__DIR__ . "/posts");
 //lets not name anything under 3 characters long
 foreach($post_dir as $key => $post){
   if (strlen($post) < 3) {
-    unset($post_dir[$key]);
+    unset($post_dir[$1key]);
   }
 }
 
@@ -37,18 +39,6 @@ $view = new View(__DIR__ . "/views");
 $view->render("main", $renderVariables);
 
 
-// if(!$underConstructon){
-//   $view->render("main", $renderVariables);
-// }else{
-//   //Icon References: http://fontawesome.io/icons/
-//   // $renderVariables['titleIcon'] = "object-group";
-//   $renderVariables['titleIcon'] = "rocket";
-//
-//   $renderVariables['titleText'] = "Under Construction";
-//   $renderVariables['subTitleText'] = "We're updating the website! Please check back shortly!";
-//
-//   $view->render("bannerPage", $renderVariables);
-// }
 
 exit(0);
 ?>

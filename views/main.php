@@ -88,7 +88,7 @@
               <?php foreach($post_contents as $key => $pc) { ?>
 
                 <div class="post-preview">
-                    <a href="post.html">
+                    <a href="week<?= $key ?>.php">
                         <h2 class="post-title">
                             <?= $pc[0] ?>
                         </h2>
