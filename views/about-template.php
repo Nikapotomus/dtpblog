@@ -42,7 +42,7 @@
                     <span class="sr-only">Toggle navigation</span>
                     Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="index.html">Deploy To Production</a>
+                <a class="navbar-brand" href="index.php">Deploy To Production</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -84,9 +84,9 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea nobis sit soluta odio, adipisci quas excepturi maxime quae totam ducimus consectetur?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium recusandae illo eaque architecto error, repellendus iusto reprehenderit, doloribus, minus sunt. Numquam at quae voluptatum in officia voluptas voluptatibus, minus!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum molestiae debitis nobis, quod sapiente qui voluptatum, placeat magni repudiandae accusantium fugit quas labore non rerum possimus, corrupti enim modi! Et.</p>
+                <p>I’ve been honoured with the privilege of studying Digital Forensics at the University of Abertay; since I was six and I received a Gameboy Colour for my birthday with a copy of Pokemon Gold, I’ve had a love affair with computers. This has only grown over the years and having the opportunity to do what I love for the past three years has been a dream come true.</p>
+                <p>This passion and motivation has been quantified by the projects I’ve done alongside my time at university to expand my knowledge in programming, cryptography, pen testing and overall problem solving.</p>
+                <p>A culmination of my work has come to this project, which I’m fortunate enough to be sponsored by Cigital to develop further. This project aims to truly instill the Cigital philosophy by building security in by providing a framework for code review challenges, helping teach core security constructs to security enthusiasts, academics and developers.</p>
             </div>
         </div>
     </div>
