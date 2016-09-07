@@ -99,6 +99,7 @@
                     <p class="post-meta">Posted by <a href="https://github.com/Nikapotomus">Nikola</a> <?= $pc[2] ?></p>
                 </div>
 
+                <!-- count returns a human number, adding 1 to make up for the discrepancy -->
                 <?php if(count($post_contents)!== $key + 1){ ?>
                   <hr>
                 <?php } ?>

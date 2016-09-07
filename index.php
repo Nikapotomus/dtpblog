@@ -27,7 +27,7 @@ if(!empty($post_dir)){
 
   $renderVariables["post_contents"] = $postContents;
 }
-// var_dump($renderVariables);
+//var_dump($renderVariables);
 
 $view = new View(__DIR__ . "/views");
 
