@@ -10,6 +10,7 @@
     <meta name="author" content="Nikola Katchkin Cucakovic">
 
     <title>Deploy To Production</title>
+    <link rel="icon" href="views/img/favicon.ico">
 
     <!-- Bootstrap Core CSS -->
     <link href="views/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">

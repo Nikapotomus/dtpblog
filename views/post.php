@@ -10,6 +10,7 @@
     <meta name="author" content="Nikola Katchkin Cucakovic">
 
     <title>Nikapotomus</title>
+    <link rel="icon" href="views/img/favicon.ico">
 
     <!-- Bootstrap Core CSS -->
     <link href="views/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -91,7 +92,7 @@
                     <p><?= $post_contents[$post_id][4] ?></p>
                     <p><?= $post_contents[$post_id][5] ?></p>
 
-                    <blockquote><?= $post_contents[$post_id][6] ?></blockquote>
+                    <!-- <blockquote><?= $post_contents[$post_id][6] ?></blockquote> -->
 
 
                     <!-- <a href="#">
