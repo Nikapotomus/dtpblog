@@ -99,7 +99,7 @@
                     <p class="post-meta">Posted by <a href="https://github.com/Nikapotomus">Nikola</a> <?= $pc[2] ?></p>
                 </div>
 
-                <?php if(!count($post_contents)== $key){ ?>
+                <?php if(count($post_contents)!== $key + 1){ ?>
                   <hr>
                 <?php } ?>
 
