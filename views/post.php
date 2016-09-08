@@ -85,15 +85,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <p><?= $post_contents[$post_id][3] ?><p>
+
+                    <?php foreach($post_contents[$post_id] as $key => $pc) {
+                            if($key > 2){ ?>
+                        <p><?= $pc ?><p>
+                    <?php };
+                    } ?>
 
                     <!-- <h2 class="section-heading">The Final Frontier</h2> -->
 
-                    <p><?= $post_contents[$post_id][4] ?></p>
-                    <p><?= $post_contents[$post_id][5] ?></p>
-
                     <!-- <blockquote><?= $post_contents[$post_id][6] ?></blockquote> -->
-
 
                     <!-- <a href="#">
                         <img class="img-responsive" src="" alt="">

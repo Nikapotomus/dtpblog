@@ -32,7 +32,7 @@ $post_id = substr($post_id, 4);
 
 $renderVariables["post_id"] = $post_id;
 
-// var_dump($renderVariables);
+// var_dump($renderVariables["post_contents"]);
 
 $view = new View(__DIR__ . "/views");
 $view->render("post", $renderVariables);
