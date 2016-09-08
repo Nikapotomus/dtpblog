@@ -1,6 +1,18 @@
-Week 1 - Idea Development--
-Deciding what direction to take the project--
+Week 1 - Idea Introduction--
+Outlining the concept and some of the goals for the project--
 Sep 06 2016--
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ornare enim vitae feugiat tristique. Ut eget ante lobortis, imperdiet est a, rutrum erat. Pellentesque nec ex id dolor finibus finibus ac vel leo. Aenean ut tempor lectus. Nulla facilisi. Suspendisse vitae magna eu massa egestas tempor. Aliquam erat volutpat. Pellentesque et odio arcu. Aenean a molestie erat, eu dictum augue.--
-Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla vitae facilisis risus. Quisque ac massa neque. Phasellus bibendum commodo nulla id sagittis. Donec a blandit justo. Phasellus viverra orci sed mauris fermentum, eget efficitur libero finibus. Nam feugiat turpis quis purus posuere finibus. Nulla non hendrerit nibh. Sed tortor urna, tempus et fringilla condimentum, cursus fermentum magna. Duis ut augue malesuada ipsum luctus porta sit amet fermentum leo. Ut ac mi sed odio lobortis fermentum vitae at purus. Fusce libero dui, vestibulum sit amet aliquet sit amet, varius ac odio.--
-Mauris ut diam tempor sapien elementum tincidunt. Mauris nec mattis est. Suspendisse potenti. In hac habitasse platea dictumst. Sed quam ipsum, tincidunt eu lobortis quis, placerat a justo. Vivamus eros orci, mollis sit amet aliquet vitae, suscipit sit amet massa. Sed ac pellentesque nisl. Cras aliquam mollis odio, eget feugiat lectus mattis at. Cras in leo ac mi iaculis varius congue a lorem. Integer sodales ipsum id aliquet viverra. Donec bibendum, elit in sagittis ornare, enim quam eleifend tellus, id egestas leo massa ut nulla. In ullamcorper lectus nec libero bibendum vulputate.
+
+The cheapest and easiest way to handle security hazards is for developers to not inadvertently introduce them in the first place. This problem fundamentally stems from a lack of awareness or education in secure software development, along with security not being seen as a priority during development. This project aims to address this problem by devising a system to help educate developers in secure coding practices through code review challenges.--
+
+Currently most workshops in secure coding will provide a series of seminars followed by a hands on example,often in the form of a snippet of code, this is then manually evaluated by the instructor at the end of the session for each student, similar to an exam. My proposal is to automate this process and almost gamify it, much like it has been done with capture the flag exercises. This however adopts a reverse take on this where you’re the one being attacked.--
+
+Deploy To Production or DTP for short, is a framework for code review challenges. This emulates a production environment where you have to patch code live, while being subjected to time based attacks against the vulnerable code you’re provided with, the attacks are done through the form of a unit test. The vulnerable code adopts common business logic issues derived from the OWASP top 10. After each attack the state of each teams individual code is then evaluated and scored, the code can be one of three states, vulnerable, patched or broken.--
+
+All of this information is then visualized on a dashboard, intended to be presented by a projector in front of the class while the exercise is happening. The information from this exercise can then be utilised to create metrics, such as average time taken to complete a SQL injection challenge, which can then be used to enhance other aspects of the workshop. Theoretically this can be then expanded to virtually any programming language by simply providing the vulnerable code, along with unit tests to exploit it.--
+
+References--
+http://www.ganssle.com/inspections.pdf--
+https://www.blackhat.com/presentations/bh-asia-04/bh-jp-04-pdfs/bh-jp-04-eller/bh-jp-04-eller.pdf--
+http://www.pentest.co.uk/secure-coding.html--
+https://www.owasp.org/index.php/Main_Page--
+https://cve.mitre.org/--
