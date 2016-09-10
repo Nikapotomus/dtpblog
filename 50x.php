@@ -4,7 +4,7 @@ include(__DIR__ . '/settings.php');
 include(__DIR__ . '/vendor/autoload.php');
 
 
-use PeacockDreamsGames\PeachyWebsite\View;
+use Nikapotomus\blog\View;
 
 $view = new View(__DIR__ . "/views");
 $renderVariables = [];
