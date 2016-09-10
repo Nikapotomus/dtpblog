@@ -10,9 +10,10 @@ Deploy To Production or DTP for short, is a framework for code review challenges
 
 All of this information is then visualized on a dashboard, intended to be presented by a projector in front of the class while the exercise is happening. The information from this exercise can then be utilised to create metrics, such as average time taken to complete a SQL injection challenge, which can then be used to enhance other aspects of the workshop. Theoretically this can be then expanded to virtually any programming language by simply providing the vulnerable code, along with unit tests to exploit it.--
 
-References--
+Background Reading--
 http://www.ganssle.com/inspections.pdf--
 https://www.blackhat.com/presentations/bh-asia-04/bh-jp-04-pdfs/bh-jp-04-eller/bh-jp-04-eller.pdf--
 http://www.pentest.co.uk/secure-coding.html--
 https://www.owasp.org/index.php/Main_Page--
 https://cve.mitre.org/--
+http://www.investintech.com/content/securecode/--
