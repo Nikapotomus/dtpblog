@@ -9,7 +9,7 @@
     <meta name="description" content="Tracking the development of Deploy To Production">
     <meta name="author" content="Nikola Katchkin Cucakovic">
 
-    <title>Deploy To Production</title>
+    <title>Nikola Katchkin<</title>
     <link rel="icon" href="views/img/favicon.ico">
 
     <!-- Bootstrap Core CSS -->
