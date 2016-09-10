@@ -9,7 +9,7 @@
     <meta name="description" content="Tracking the development of Deploy To Production">
     <meta name="author" content="Nikola Katchkin Cucakovic">
 
-    <title>Nikola Katchkin<</title>
+    <title>Nikola Katchkin</title>
     <link rel="icon" href="views/img/favicon.ico">
 
     <!-- Bootstrap Core CSS -->
@@ -42,14 +42,14 @@
                     <span class="sr-only">Toggle navigation</span>
                     Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="index.php">Deploy To Production</a>
+                <a class="navbar-brand" href="/">Deploy To Production</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="index.php">Home</a>
+                        <a href="/">Home</a>
                     </li>
                     <li>
                         <a href="about.php">About</a>
