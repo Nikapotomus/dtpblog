@@ -1,19 +1,20 @@
-Week 1 - Idea Introduction--
-Outlining the concept and some of the goals for the project--
+Week 1 - Background Research--
+Introduction and background research for the project--
 Sep 06 2016--
 
-The cheapest and easiest way to handle security hazards is for developers to not inadvertently introduce them in the first place. This problem fundamentally stems from a lack of awareness or education in secure software development, along with security not being seen as a priority during development. This project aims to address this problem by devising a system to help educate developers in secure coding practices through code review challenges.--
+It’s the first week of many working on my Honours project, despite having done a multitude of large projects in the past, I can’t help but feel this is significantly more substantial and daunting, this might seem obvious but I thought I would point it out anyway. With that in mind this puts a lot of pressure on picking an interesting topic and emphasises the importance of picking a subject that truly inspires me. This would have been a problem for me in the past as I felt like I was equally interested in a broad range of subjects.--
 
-Currently most workshops in secure coding will provide a series of seminars followed by a hands on example,often in the form of a snippet of code, this is then manually evaluated by the instructor at the end of the session for each student, similar to an exam. My proposal is to automate this process and almost gamify it, much like it has been done with capture the flag exercises. This however adopts a reverse take on this where you’re the one being attacked.--
+However I was fortunate enough to have an extremely proactive summer working in London with Cigital, a fantastic company specialising in software security. Throughout my time there I’ve met some of the brightest and inspiring people in the industry, learning an enormous amount from them in a seemingly short space of time. For the first time since I started University I feel like I have a sense of direction and know what I want to do once I finish my studies.--
 
-Deploy To Production or DTP for short, is a framework for code review challenges. This emulates a production environment where you have to patch code live, while being subjected to time based attacks against the vulnerable code you’re provided with, the attacks are done through the form of a unit test. The vulnerable code adopts common business logic issues derived from the OWASP top 10. After each attack the state of each teams individual code is then evaluated and scored, the code can be one of three states, vulnerable, patched or broken.--
+With all that being said, I want to focus my dissertation project towards software security. To narrow that enormous field down, specifically something relating to teaching secure software development practices. After spending quite some time in academia and investing time outside of that into searching for methods to educate myself in secure coding practices, I feel that this is a vital pillar in software development that is often overlooked. After meeting with my lecturer I was advised to go and find some academic papers for guidance.--
 
-All of this information is then visualized on a dashboard, intended to be presented by a projector in front of the class while the exercise is happening. The information from this exercise can then be utilised to create metrics, such as average time taken to complete a SQL injection challenge, which can then be used to enhance other aspects of the workshop. Theoretically this can be then expanded to virtually any programming language by simply providing the vulnerable code, along with unit tests to exploit it.--
+I spent some time trying to find some valuable resources and I’ve included the papers that I felt could be useful resources for a literature review. This has helped give me a bit more of a sense of direction as the subject matter has an extremely broad range of studies. I’ll use this to give next week's post a bit more context for the project and invest some more time into developing an idea.--
 
-Background Reading--
-http://www.ganssle.com/inspections.pdf--
-https://www.blackhat.com/presentations/bh-asia-04/bh-jp-04-pdfs/bh-jp-04-eller/bh-jp-04-eller.pdf--
-http://www.pentest.co.uk/secure-coding.html--
-https://www.owasp.org/index.php/Main_Page--
-https://cve.mitre.org/--
-http://www.investintech.com/content/securecode/--
+Background Reading:--
+http://www.dphu.org/uploads/attachements/books/books_1713_0.pdf--
+http://flosshub.org/sites/flosshub.org/files/Rigby2006TR.pdf--
+https://peerj.com/preprints/2163/--
+http://ieeexplore.ieee.org/document/848476/--
+http://www.sciencedirect.com/science/article/pii/S0360131512000085--
+http://ieeexplore.ieee.org/document/1657940/--
+https://www.researchgate.net/publication/261094911_Teaching_secure_software_engineering_Writing_secure_code--

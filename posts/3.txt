@@ -1,0 +1,36 @@
+Week 3 - Defining The Project--
+Using the background reading to further direct the initial concept idea--
+Sep 20 2016--
+
+Using the research and background outlined in last week's post, a working title has been created, along with the aims and objectives of the projects. This is to help define the direction of the project for the future and provide obtaining achievable goals. The entire rationale behind this project is to help educate developers in common secure code practices, in an attempt to reflect this the current project characteristics are:--
+
+Working Title:--
+Deploy to Production - a  framework for teaching secure code practices through code review challenges.--
+Project Aim:--
+To develop a prototype system to assist in teaching secure code practices through code review challenges, adopting a reverse take on capture the flag exercises.--
+
+Objectives:--
+• Illustrate the obstacles that unsecure code presents.--
+• Identify and partially review methods / techniques for teaching secure code practices--
+• To build a suitably featured set system / application--
+• Emulate a production environment, publically available--
+• Securely distribute vulnerable code to each user within the system--
+• Time based attacks against the code--
+• Securely check this code and persistently store this information--
+• Critically appraise the effectiveness of the application--
+• Obtain performance data of the tool and analyze the results--
+• Visualize this data in a clear and concise way--
+• Create metrics from this data to identify weaknesses--
+• To outline future work as this is an extremely easily expandable project--
+
+
+By working through this I've managed to scope out the project and have a much clearer understanding of how to address the project. --
+
+References:--
+https://buildsecurityin.us-cert.gov/sites/default/files/bsi6-pentest_0.pdf--
+http://ieeexplore.ieee.org/document/1194923/--
+https://books.google.co.uk/books?hl=en&lr=&id=nZVCAwAAQBAJ&oi--
+https://www.usenix.org/system/files/conference/usenixsecurity12/sec12-final225.pdf--
+http://www.dccia.ua.es/dccia/inf/asignaturas/MADS/2013-14/lecturas/10_Fowler_Continuous_Integration.pdf--
+http://tocs.ulb.tu-darmstadt.de/215281349.pdf--
+http://ieeexplore.ieee.org/document/10188/--

@@ -1,28 +1,19 @@
-Week 2 - Defining The Project--
-Using the background reading to further direct the initial concept idea--
+Week 2 - Idea Introduction--
+Outlining the concept and some of the goals for the project--
 Sep 13 2016--
 
-Using the research and background outlined in last week's post, a working title has been created, along with the aims and objectives of the projects. This is to help define the direction of the project for the future and provide obtaining achievable goals. The entire rationale behind this project is to help educate developers in common secure code practices, in an attempt to reflect this the current project characteristics are:--
+The cheapest and easiest way to handle security hazards is for developers to not inadvertently introduce them in the first place. This problem fundamentally stems from a lack of awareness or education in secure software development, along with security not being seen as a priority during development. This project aims to address this problem by devising a system to help educate developers in secure coding practices through code review challenges.--
 
-Working Title:--
-Evaluation of the methods and techniques used to educate developers in secure code practices to mitigate attack vectors.--
+Currently most workshops in secure coding will provide a series of seminars followed by a hands on example,often in the form of a snippet of code, this is then manually evaluated by the instructor at the end of the session for each student, similar to an exam. My proposal is to automate this process and almost gamify it, much like it has been done with capture the flag exercises. This however adopts a reverse take on this where you’re the one being attacked.--
 
-Project Aim:--
-To develop a prototype system to assist in teaching secure code practices through code review challenges, adopting a reverse take on capture the flag exercises.--
+Deploy To Production or DTP for short, is a framework for code review challenges. This emulates a production environment where you have to patch code live, while being subjected to time based attacks against the vulnerable code you’re provided with, the attacks are done through the form of a unit test. The vulnerable code adopts common business logic issues derived from the OWASP top 10. After each attack the state of each teams individual code is then evaluated and scored, the code can be one of three states, vulnerable, patched or broken.--
 
-Objectives:--
-• Illustrate the obstacles that unsecure code presents.--
-• Identify and partially review methods / techniques for teaching secure code practices--
-• To build a suitably featured set system / application--
-• Emulate a production environment, publically available--
-• Securely distribute vulnerable code to each user within the system--
-• Time based attacks against the code--
-• Securely check this code and persistently store this information--
-• Critically appraise the effectiveness of the application--
-• Obtain performance data of the tool and analyze the results--
-• Visualize this data in a clear and concise way--
-• Create metrics from this data to identify weaknesses--
-• To outline future work as this is an extremely easily expandable project--
+All of this information is then visualized on a dashboard, intended to be presented by a projector in front of the class while the exercise is happening. The information from this exercise can then be utilised to create metrics, such as average time taken to complete a SQL injection challenge, which can then be used to enhance other aspects of the workshop. Theoretically this can be then expanded to virtually any programming language by simply providing the vulnerable code, along with unit tests to exploit it.--
 
-
-By working through this I've managed to scope out the project and have a much clearer understanding of how to address the project. --
+Background Reading--
+http://www.ganssle.com/inspections.pdf--
+https://www.blackhat.com/presentations/bh-asia-04/bh-jp-04-pdfs/bh-jp-04-eller/bh-jp-04-eller.pdf--
+http://www.pentest.co.uk/secure-coding.html--
+https://www.owasp.org/index.php/Main_Page--
+https://cve.mitre.org/--
+http://www.investintech.com/content/securecode/--
