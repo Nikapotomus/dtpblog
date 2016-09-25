@@ -5,32 +5,53 @@ Sep 20 2016--
 Using the research and background outlined in last week's post, a working title has been created, along with the aims and objectives of the projects. This is to help define the direction of the project for the future and provide obtaining achievable goals. The entire rationale behind this project is to help educate developers in common secure code practices, in an attempt to reflect this the current project characteristics are:--
 
 Working Title:--
-Deploy to Production - a  framework for teaching secure code practices through code review challenges.--
+Developing methods and techniques to educate developers in secure code practices to mitigate attack vectors.--
+
+Research Question:--
+Is it possible to gamify code review challenges similar to capture the flag exercises to educate developers?--
+
 Project Aim:--
-To develop a prototype system to assist in teaching secure code practices through code review challenges, adopting a reverse take on capture the flag exercises.--
+To develop a prototype system to assist in teaching secure code practices through code review challenges, adopting a reverse take on capture the flag exercises.
 
 Objectives:--
 • Illustrate the obstacles that unsecure code presents.--
-• Identify and partially review methods / techniques for teaching secure code practices--
-• To build a suitably featured set system / application--
-• Emulate a production environment, publically available--
-• Securely distribute vulnerable code to each user within the system--
-• Time based attacks against the code--
-• Securely check this code and persistently store this information--
-• Critically appraise the effectiveness of the application--
-• Obtain performance data of the tool and analyze the results--
-• Visualize this data in a clear and concise way--
-• Create metrics from this data to identify weaknesses--
-• To outline future work as this is an extremely easily expandable project--
+• Identify and evaluate methods / techniques for improving understanding of secure code practices--
+• Construct a suitably feature set system / application that addresses the issues presented by these methods--
+○ Emulate a production environment, publically available--
+○ Create a number of examples of un-secure code examples (OWASP /CVE)--
+○ Create functionality / vulnerability tests for the code through a unit test--
+○ Securely distribute vulnerable code to each user within the system--
+○ Time based attacks against the code--
+○ Securely check this code and persistently store this information--
+• Obtain and analyse performance data of the tool and analyze the results--
+○ Visualize this data in a clear and concise way
+○ Create metrics from this data to identify weaknesses
 
 
 By working through this I've managed to scope out the project and have a much clearer understanding of how to address the project. --
 
 References:--
-https://buildsecurityin.us-cert.gov/sites/default/files/bsi6-pentest_0.pdf--
-http://ieeexplore.ieee.org/document/1194923/--
-https://books.google.co.uk/books?hl=en&lr=&id=nZVCAwAAQBAJ&oi--
-https://www.usenix.org/system/files/conference/usenixsecurity12/sec12-final225.pdf--
-http://www.dccia.ua.es/dccia/inf/asignaturas/MADS/2013-14/lecturas/10_Fowler_Continuous_Integration.pdf--
-http://tocs.ulb.tu-darmstadt.de/215281349.pdf--
-http://ieeexplore.ieee.org/document/10188/--
+http://www.sciencedirect.com.libproxy.abertay.ac.uk/science/article/pii/S1353485807700375--
+http://www.sciencedirect.com.libproxy.abertay.ac.uk/science/article/pii/S0957417413007513--
+http://www.sciencedirect.com.libproxy.abertay.ac.uk/science/article/pii/S0360131510000527--
+https://www.scopus.com/record/display.uri?eid=2-s2.0-84873851960&origin=inward&txGid=0--
+http://dl.acm.org.libproxy.abertay.ac.uk/citation.cfm?doid=2591062.2591200--
+
+Training cyber security:
+http://www.sciencedirect.com/science/article/pii/B9781597496377000046--
+
+Talks about security mindsets:
+http://link.springer.com.libproxy.abertay.ac.uk/book/10.1007/978-3-319-32699-3/page/1--
+
+Ctfs:
+http://arxiv.org/abs/1507.01922--
+
+Game theory behind CTF's:
+http://search.proquest.com.libproxy.abertay.ac.uk/docview/1617794836?rfr_id=info%3Axri%2Fsid%3Aprimo--
+
+CTF defcon documented:
+http://search.proquest.com.libproxy.abertay.ac.uk/docview/222926551?rfr_id=info%3Axri%2Fsid%3Aprimo--
+http://search.proquest.com.libproxy.abertay.ac.uk/docview/215996039?rfr_id=info%3Axri%2Fsid%3Aprimo--
+
+Vulnerabilities increase over the years:
+http://csrc.nist.gov/groups/SNS/rbac/documents/vulnerability-trends10.pdf--
