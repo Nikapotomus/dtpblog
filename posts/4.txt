@@ -1,4 +1,49 @@
 
 Week 4 - Constructing Literature Review--
 Gathering data and investigating literature to evaluate the project--
-Sep 27 2016--
+Sep 29 2016--
+
+I spent this week iterating through the resources I gathered previously to determine which sources would accurately reflect the project, and suffice as credible references. This ended up taking a lot longer than expected as I decided to take this a bit further and started doing some preliminary planning for the proposal’s literature review. The format is just a working draft but logically I would address the literature in the following order:--
+<ul>
+<li> Introduction to previous vulnerability statistics.</li>--
+<li> Talk about why this problem exists.</li>--
+<li> Address this problem from a different perspective; say a hacker for example.</li>--
+<li> Talk about how game theory in an educational setting.</li>--
+<li> Link this back to Capture The Flag exercises as a teaching tool.</li>--
+<li> Illustrate how code review is currently utilised as a teaching tool</li>--
+<li> Suggest the notion of gamifying code review to share knowledge.</li>
+
+</ul>--
+
+This seems like an effective way to accurately present the background literature and provide context to the reader. The current academic papers I’ve found to support the format I’ve outlined are (in order as above):--
+
+<ul>
+<li> Kuhn, R and Johnson,, C 2010, Vulnerability Trends: Measuring Progress, Insecure IT, viewed 26 September, 2016, <http://csrc.nist.gov/groups/SNS/rbac/documents/vulnerability-trends10.pdf>.</li>--
+
+<li> Anon 2016, NVD - Home, Nvd.nist.gov, viewed 26 September, 2016, <https://nvd.nist.gov/>.</li>--
+
+<li> Gunter Ollmann (May 2007). Network Security. 1st ed. New Zealand: Elsevier. P16-20.</li>--
+
+<li> Nikolai Mansourov, Djenana Campara (2011). Beyond Detecting Vulnerabilities. MK/OMG: Elsevier . p1–21.<http://www.sciencedirect.com/science/article/pii/B9780123814142000014></li>--
+
+<li> Chris Eagle, John L. Clark. (2004). Caputre-The-Flag: Learning Computer Security Under Fire. Naval Postgraduate School. 1 (1), p18-21. </li>--
+
+<li> Hale, J 2016, Game Theory, Cyber preparedness, (25.9), pp. P24-26.</li>--
+
+<li> Juan C. Burguillo (September 2010). Computers & Education. 2nd ed. Spain: Elsevier. P566-575.<http://www.sciencedirect.com.libproxy.abertay.ac.uk/science/article/pii/S0360131510000527></li>
+
+</ul>--
+
+
+Outside of the lecturer directed work, I’ve taken the time to look into a few important methods to achieve the desired functionality for the project. In order to achieve the dynamic virtual machine provisioning I’ve created a few tests using Docker and Vagrant in order to determine their applicability. I’ve found that Vagrant would be an ideal tool for remotely pulling the vm’s as this provides an enormous amount of flexibility, along with allowing me to piggy-back onto their service rather than having to support this technology myself. However, Docker is also very useful but for something slightly ambitious. I managed to dynamically create an Apache service instance running as a Docker process, this provides a means to securely running subprocesses which is imperative for the project. Hypothetically I could then run the “grading” system to parse each team's results via this method and push the results to the database without having to worry about security problems.--
+
+I also looked into some unit tests methods for PHP due to my interest in the language. I found a unit testing framework called PHPUnit which would be perfect for testing the functionality / vulnerability in each team’s code. Furthermore, this framework has standardised and consistent error handlers which I could use to parse the code programmatically.--
+
+
+<strong>References:</strong>--
+<ul>
+<li><a href="https://www.docker.com/"> Docker</a></li>--
+<li><a href="https://www.vagrantup.com/"> Vagrant</a></li>--
+<li><a href="https://phpunit.de/"> PHPUnit</a></li>
+
+</ul>--
