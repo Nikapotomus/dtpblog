@@ -2,3 +2,31 @@
 Week 5 - Practical & Evaluation Method--
 Evaluating methods to measure project metrics--
 Oct 6 2016--
+
+This week I looked into outlining how I’m going to practically evaluate the project to determine it’s effectiveness. Considering the background I’ve already provided I think the best way to present this information is in two parts: results I’m looking for and how I’m going to measure them. This is in an attempt to simplify the problem and generalise it as much as possible considering this is still in extremely early development, giving me room to adjust as the project progresses.--
+
+<strong>Results I’m looking for</strong>--
+<ul>--
+<li>User feedback on effectiveness / impression of the tools</li>--
+<li>Metrics from the tool to determine the effectiveness of the seminar</li>--
+</ul>--
+
+<strong>How to measure them</strong>--
+<ul>--
+<li>Qualitative questionnaires</li>--
+<li>Logging each user's data into a database then querying it</li>--
+</ul>--
+
+The questionnaires will be challenging due to my lack of experience with creating them, however,  a simple likert scale module should suffice with some support from my supervisor later on. From a statistical perspective, I intent to create metrics derived from the data gathered during the operational use of the tool, this can then be used to determine how long it took each user to resolve a vulnerability and provide some quantitative data. The combination of these two should provide a strong method for critically evaluating the effectiveness of the project.--
+
+<strong>Summary</strong>--
+To clear up any confusion I thought I would include a bit more detail about the project and how I intend to tackle the practical component.--
+
+<ul>--
+<li>Mainly focused on the development of the tool.</li>--
+<li>Use OWASP top 10 as reference for business logic issues to incorporate challenges into the tool.</li>--
+<li>Create a front end component to visualise the data.</li>--
+<li>Create a system for dynamically create a vm to hold the tool.</li>--
+<li>System for running unit tests against the business logic issues for both functionality / vulnerability.</li>--
+<li>Parse this information and push results to the database (this is what is used for the metrics).</li>--
+</ul>--
