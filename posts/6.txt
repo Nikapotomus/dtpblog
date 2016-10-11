@@ -1,4 +1,65 @@
 
-Week 6 - Further Background Research--
+Week 6 - Applying The Background Research--
 Applying the research into some practical examples--
 Oct 11 2016--
+
+This week I decided to develop the prior background research further by writing a draft for the literature review. The purpose of this is to cement the research and start further development on the project.--
+
+ <blockquote>
+ As technology continues to grow exponentially, likewise does the number of software engineers, this is in order to facilitate the need for the software on new devices to provide functionality. However, as more software is produced, the number of attack vectors also increases. As outlined by Rick Kuhn and Chris Johnson (Kuhn and Johnson, 2010), by analysing the National Vulnerability Database (Anon 2016), they found a steady increase until 2006 where the trend suggests that developers started implementing stricter controls. They go on to outline that there is still an enormous amount of work for software developers to adopt secure code practices in the future.
+ This statement is applicable now more than ever considering the increase in recorded data breaches that have been announced by large organisations over the past few years (Tom Evans. (2016)).--
+
+ As outlined by Gunter Ollmann (Gunter Ollmann (May 2007)), in order to tackle the problem of un-secure software development and inevitably, vulnerable software, developers must acknowledge the threats targeting their code and provide methods to handle said threats. Gunter Ollmann goes onto make an extremely important point that in order to effectively create secure systems, security features must be outlined in the design process and integrated during the applications development. Adding secure countermeasures as an afterthought often results in inconsistent and unpredictable results. However, he goes on to outline that developers often have a lack of both time and security knowledge.--
+
+ Nikolai Mansourov and Djenana Campara (Nikolai Mansourov, Djenana Campara (2011)) look at this problem from an alternative perspective, investigating why and how hackers know to exploit companies systems. They come to the conclusion that hackers share their knowledge and quantify it into weaponized tools, used to exploit systems built by developers often lacking security skills. Furthermore outlining and reaffirming Gunter Ollman’s point that secure software development practices are often seen as an afterthought, resulting in developers not being able to acknowledge threats against their code due to a lack of time, awareness or even knowledge. --
+
+ This predicament fundamentally stems from security not being seen as priority during programming courses, as outlined by Michael Johnstone (Michael N. Johnstone. (2013)). Michael provides further insight by stating that the teaching of secure programming is often seen as an extra or even unnecessary in learning basic to intermediate programming. This is surprising considering that students had shown positive feedback to being taught security constructs from an early stage. Michael presents the supporting data along with the enormous financial figures supporting this argument if that wasn’t enough. This stresses the importance of further research being invested into developing tools to teach security constructs.--
+
+ Chris Eagle and John Clark (Chris Eagle, John L. Clark. (2004)) analyse a teaching tool created to share hacking knowledge that has grown massively in popularity, known as Capture The Flag exercises. They talk about the concept from its very early and primitive stages, outlining that it should be integrated into core security course curriculums due to its success. This uses gamifying logic to create an almost competitive and fun environment that has shown positive results in teaching security constructs, as well as general programming as outlined by James Hale (Hale, J 2016). This is a commendable example of tool in a similar area that has created a platform to share knowledge effectively in an exciting and unconventional way.--
+
+ Shane McIntosh, Yasutaka Kamei, Bram Adams and Ahmed Hassan (Shane McIntosh, Yasutaka Kamei, Bram Adams and Ahmed E. Hassan. (2015)) investigate a well established practice to help secure code, known as code review, and the effects of it when applied to the software development life cycles, both in terms of long term functionality and security. They go on to talk about how sharing knowledge within the industry is imperative to achieving even a chance of securing systems. The significance of this is outlined by Bacchelli A and  Bird C (Bacchelli A, Bird C (2013), providing insight into how code review in teaching programs has shown success in both educating software developers and teaching core code reviewing skills; hence its integration into secure programming courses.--
+
+ Based from this prior research, Code Review could be used as a mechanic to provide a platform and framework for teaching secure code practices through experiential learning, similar to Capture The Flag exercises. However, in order to do this, the project's effectiveness needs to be empirically measured to determine its validity and quality. As outlined by Goos and Salomons (Goos, M. & Salomons, A. (22 July 2016)) this is a heavily debated subject, however,  they go on to outline the most commonly used method is Course Evaluations. This is essentially a questionnaire using a combination of both qualitative and quantitative data, often supported by a reliable metric such as average student grades or time. This has shown positive results in comparison to alternative teaching methods.
+ </blockquote>--
+
+ With this in mind, I decided to create some practical examples to start work on the proof of concept. The first step of this is learning the basics of the unit testing framework outlined previously called <a href="https://phpunit.de/"> PHPUnit</a>. The basic usage of the tool as outlined by the documentation as:--
+
+  <blockquote>
+  phpunit.phar -l PATH TO FILE
+  </blockquote>--
+
+  This then parses the unit test file by running the methods prefixed with <strong>test</strong> in the function name, and evaluating their state by using the api to set assertions on variable states. An example of this is: --
+
+<blockquote>
+  require_once(__DIR__ . '/exampleCodeFile.php');--
+
+  class basic_phpunit_test_example extends PHPUnit_Framework_TestCase{--
+
+    public function testFunctionality(){<br>
+      $this->assertTrue(exampleFunctionInExampleCodeFile(1));<br>
+    }--
+
+    public function testVulnerability(){<br>
+      $this->assertTrue(exampleFunctionInExampleCodeFile(2));<br>
+    }
+  </blockquote>--
+
+  This is a simple demo that imports an example code file and makes an assertions that a specified function will return true, this function simply returns true if an int is passed to it for simplicity, for more information on this refer to the <a href="https://phpunit.de/manual/current/en/extending-phpunit.html#extending-phpunit.custom-assertions"> documentation</a>. This outputs the following results when ran: --
+
+<blockquote>
+  PHPUnit 5.6.0 by Sebastian Bergmann and contributors.--
+
+.--
+
+Time: 1 seconds, Memory: 5.25Mb--
+
+OK (2 tests, 2 assertions)
+</blockquote>--
+
+This is output as <strong>stderr</strong> and <strong>stdout</strong>, meaning it can be easily parsed to determine the state of the code when output to a file using the bash command: --
+
+<blockquote>
+ phpunit.phar > <strong>FILENAME</strong> + 2>&1
+</blockquote>--
+
+This redirects ALL state information from the tool to a file, unfortunately this is not documented anywhere, requiring some annoying trial and error on my part. Notably this has custom error handler messages for each type of error, such as basic syntax errors, which is very helpful for my needs.--
