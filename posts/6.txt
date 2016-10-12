@@ -3,7 +3,7 @@ Week 6 - Applying The Background Research--
 Applying the research into some practical examples--
 Oct 11 2016--
 
-This week I decided to develop the prior background research further by writing a draft for the literature review. The purpose of this is to cement the research and start further development on the project.--
+This week I decided to develop the prior background research further by writing a draft for the literature review. The purpose of this is to cement the research and start further development on the project. Here is the first draft as a preview:--
 
  <blockquote>
  As technology continues to grow exponentially, likewise does the number of software engineers, this is in order to facilitate the need for the software on new devices to provide functionality. However, as more software is produced, the number of attack vectors also increases. As outlined by Rick Kuhn and Chris Johnson (Kuhn and Johnson, 2010), by analysing the National Vulnerability Database (Anon 2016), they found a steady increase until 2006 where the trend suggests that developers started implementing stricter controls. They go on to outline that there is still an enormous amount of work for software developers to adopt secure code practices in the future.
