@@ -1,0 +1,67 @@
+
+Week 8 - Programmatically Using Unit Tests--
+Creating a python wrapper to run unit tests--
+Oct 24 2016--
+
+The practical examples developed last week provided a platform for evaluating each user’s code state. However, in order to use this system it must first be tested by implementing it programmatically to determine its feasibility. The significance of this is that there are numerous environmental and security issues to consider.--
+
+The example developed this week is essentially a wrapper for previous weeks work, the fundamental purpose of this is to call a subprocess. The reason this is required is to provide a secure system for executing the unit tests. Within the Python programming language it is possible to drop permissions for a process to a user in the system. This is done using the <a href="https://docs.python.org/2/library/pwd.html"> pwd</a> library in python:--
+
+ <blockquote>
+ from pwd import getpwnam--
+ seteuid(getpwnam(<USER_IN_SYSTEM>).pw_uid)--
+ </blockquote>--
+
+However, the limitation of doing this is that the process then forfeits the ability to regain the privileges lost via this process. This subsequently means that the tool would only being able to check one user and then error out due to a lack of permissions. To fix this, the main python script can call a subprocess wrapper to drop the process permissions to achieve the required functionality. This is done via using the <a href="https://docs.python.org/2/library/subprocess.html"> subprocess</a> python library:--
+
+<blockquote>
+import subprocess--
+subprocess.Popen(“ls -l > ./testcommand.txt”, shell=True ,stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+</blockquote>--
+
+Using the two examples previously as a baseline, a functional demo is created using the unit testing framework to assure it’s possible. As part of this some advanced functionality is added to accept arguments to the script as this flexibility is required. This is done using the <a href="https://docs.python.org/2/library/sys.html"> argv</a> library.--
+
+<blockquote>
+from sys import argv<br>
+from os import seteuid<br>
+from pwd import getpwnam<br>
+from os import path<br>
+import subprocess--
+
+phpunitcmd = 'phpunit.phar'--
+
+#challenge_1_test,challenge_2_test,challenge_3_test,challenge_4_test,challenge_5_test--
+
+if len(argv) == 5:<br>
+    unitTestDirectory = argv[1]<br>
+    userInSystem = argv[2]<br>
+    challenges = argv[3]<br>
+    userDir = argv[4]--
+
+    challenge_files = challenges.split(",")--
+
+    if len(challenge_files) < 2:<br>
+        print("Please provide the challenge files in a comma separated form")<br>
+    else:<br>
+        print("Setting permissions for: {}").format(userInSystem)--
+
+        #sets the permissions for exeucting<br>
+        seteuid(getpwnam(userInSystem).pw_uid)--
+
+        for c in challenge_files:<br>
+            out_file = "{}{}/{}_output.txt".format(unitTestDirectory, userInSystem, c)<br>
+            in_file = path.join(userDir, c)--
+
+            bashCmd = '{} {}.php --testdox > {} + 2>&1'.format(phpunitcmd,
+            in_file, out_file<br>
+            )--
+
+            print ">>> DEBUG: {}".format(out_file)--
+
+            subprocess.call(bashCmd, shell=True)--
+
+else:<br>
+    print "Incorrect arguments provided"
+</blockquote>--
+
+The wrapper accepts a path to the directory the unit tests are stored, the user names in the system, a comma separated list of challenge file names and finally the path for the directory of each user in the system. This then cycles through each of the challenges and executes the process in the user’s permissions and outputs the results to a directory. Notably this also outputs the errors to the file as this is vital for parsing.--
