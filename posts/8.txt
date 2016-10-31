@@ -1,0 +1,16 @@
+
+Week 9 - Containerisation Clusterfu*k--
+Researching into Vagrant, Docker, Chef and more!--
+Oct 31 2016--
+
+For quite some time I’ve been confident that dynamically creating a virtual machine to contain the tool is the best decision. After a week of reading through contradicting documentation and patronising blog posts I’m still 90% sure it’s the best decision. However, it’s going to be a massive pain and definitely cause some problems requiring extra attention. As part of my research I looked into using <a href="https://www.vagrantup.com/l">Vagrant</a> to achieve this desired functionality. --
+
+
+Vagrant is a tool primarily written in ruby that provides a service of remotely obtaining virtual machines, referred to as “boxes” within the system. These boxes are defined by the vagrantfile, providing specific functionality such as shared folders or bash scripts to be run as the virtual machine is launched to provision the environment. The significance of this is that the tool will require a large amount of provisioning in terms of initializing system variables to achieve operational functionality.--
+
+
+Unfortunately, this is where it stops being convenient and becomes a massive pain. In order to add packages to the system such as PHP or Python during provisioning it uses a third application. Currently supporting
+<a href="https://www.chef.io/chef/">Chef</a> and <a href="https://puppet.com/">Puppet</a>, both of which are more often than not used by extremely experienced developers, resulting in a brutal learning curve.--
+
+
+After testing out both I’ve come to the conclusion that puppet is the better fit for the project as it provides significantly more flexibility. It supports <a href="https://github.com/puphpet/puphpet">Puphpet Modules</a>, which are essentially just tailored implimentations of packages that can be dynamically added to the system. This means that if this project were to hypothetically expand to multiple programming languages it would account for that growth.--
