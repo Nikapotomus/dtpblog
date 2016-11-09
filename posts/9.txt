@@ -1,0 +1,101 @@
+
+Week 10 - Designing The Environment--
+Evaluating the services, modules and environment variables required for the system--
+Nov 09 2016--
+
+Last week I outlined a few options for containerisation, then determined the most feasible option after some testing. This week, I’ve looked into some background research on the modules available on the <a href="https://github.com/puphpet/puphpet">Puphpet </a> platform, used to obain modules for <a href="https://www.vagrantup.com/l">Vagrant</a>. The services and modules I’ve determined that are required include:--
+
+
+<ul>
+<li>PHP 5.6</li><br>
+<li>Apache 2.4+</li><br>
+<li>MySQL 5.7+</li><br>
+<li>Python 2.7+</li><br>
+</ul>--
+
+
+These modules can be easily applied to the Vagrant container via the configuration file <strong>VagrantFile</strong>:--
+
+
+<blockquote>
+# -*- mode: ruby -*---
+
+
+dir = File.dirname(File.expand_path(__FILE__))--
+
+
+require 'yaml'<br>
+require "#{dir}/puphpet/ruby/deep_merge.rb"<br>
+require "#{dir}/puphpet/ruby/to_bool.rb"<br>
+require "#{dir}/puphpet/ruby/puppet.rb"--
+
+
+configValues = YAML.load_file("#{dir}/puphpet/config.yaml")--
+
+
+provider = ENV['VAGRANT_DEFAULT_PROVIDER'] ? ENV['VAGRANT_DEFAULT_PROVIDER'] : 'local'<br>
+if File.file?("#{dir}/puphpet/config-#{provider}.yaml")<br>
+  custom = YAML.load_file("#{dir}/puphpet/config-#{provider}.yaml")<br>
+  configValues.deep_merge!(custom)<br>
+end--
+
+
+if File.file?("#{dir}/puphpet/config-custom.yaml")<br>
+  custom = YAML.load_file("#{dir}/puphpet/config-custom.yaml")<br>
+  configValues.deep_merge!(custom)<br>
+end--
+
+
+data = configValues['vagrantfile']--
+
+
+Vagrant.require_version '>= 1.8.1'--
+
+
+Vagrant.configure('2') do |config|<br>
+  config.vm.synced_folder "../", "/deploy_to_production",<br>
+    owner: "www-data",<br>
+    group: "www-data",<br>
+  eval File.read("#{dir}/puphpet/vagrant/Vagrantfile-#{data['target']}")<br>
+end--
+</blockquote>--
+
+
+This simply initialises vagrant and then references the puppet config file, <strong>config.yaml</strong>, this is used to define the modules. An example of this can be seen below to add mysql to the container:--
+
+
+<blockquote>
+mysql:<br>
+    install: '1'<br>
+    settings:<br>
+        version: '5.6'<br>
+        root_password: <your password><br>
+        override_options: {  }<br>
+    adminer: 0<br>
+    users: {  }<br>
+    databases: {  }<br>
+    grants: {  }<br>
+postgresql:<br>
+    install: '0'<br>
+    settings:<br>
+        global:<br>
+            encoding: UTF8<br>
+            version: '9.4'<br>
+        server:<br>
+            postgres_password: '12345'<br>
+    databases: {  }<br>
+    users: {  }<br>
+    grants: {  }<br>
+    adminer: 0<br>
+mongodb:<br>
+    install: '0'<br>
+    settings:<br>
+        bind_ip: 127.0.0.1<br>
+        port: '27017'<br>
+    globals:<br>
+        version: 2.6.0<br>
+    databases: {  }<br>
+</blockquote>--
+
+
+In summary, it’s possible to create an efficient LAMP stack using this technique to remotely obtain the modules, circumventing the need to store large libraries within the repository of the tool. This should make the project distributable, robust and abstracting the complex initialization from the user.
