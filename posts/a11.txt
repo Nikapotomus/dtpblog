@@ -1,0 +1,104 @@
+
+Week 12 - Feasibility Demo Preparation--
+Preparing the research and practical work performed--
+Nov 22 2016--
+
+This week primarily involved looking through the material utilised to structure the design of the project. This resulted in creating an annotated bibliography:--
+
+<strong> Secure Programming Evaluation</strong>--
+
+<blockquote>
+Kuhn, R and Johnson,, C 2010, Vulnerability Trends: Measuring Progress, Insecure IT, viewed 26 September, 2016, <http://csrc.nist.gov/groups/SNS/rbac/documents/vulnerability-trends10.pdf>.<br>
+
+Anon 2016, NVD - Home, Nvd.nist.gov, viewed 26 September, 2016, <https://nvd.nist.gov/>.
+</blockquote>--
+
+
+<ul>
+<li>Documents vulnerabilities / statistics over the past decade to outline a steady increase of exploits of varying degrees.</li>
+</ul>--
+
+
+<strong> The Cause Of Unsecured Production Code</strong>--
+
+<blockquote>
+Gunter Ollmann (May 2007). Network Security. 1st ed. New Zealand: Elsevier. P16-20
+</blockquote>--
+
+
+<ul>
+<li>Investigates why securing code is a problem.</li>
+<li>Time</li>
+<li>Education</li>
+<li>Knowledge</li>
+</ul>--
+
+<strong> Modern approach to tackling this problem</strong>--
+
+<blockquote>
+Hale, J 2016, Game Theory, Cyber preparedness, (25.9), pp. P24-26.<br>
+
+
+Juan C. Burguillo (September 2010). Computers & Education. 2nd ed. Spain: Elsevier.P566-575.<http://www.sciencedirect.com.libproxy.abertay.ac.uk/science/article/pii/S0360131510000527>
+
+</blockquote>--
+
+<ul>
+<li>Talks about game theory in computing</li>
+<li>Shows extremely positive results</li>
+<li>Stresses that more work needs to be done in teaching security</li>
+</ul>--
+
+<strong> Capture The Flag Exercises</strong>--
+
+<blockquote>
+Chris Eagle, John L. Clark. (2004). Caputre-The-Flag: Learning Computer Security Under Fire. Naval Postgraduate School. 1 (1), p18-21.
+</blockquote>--
+
+<ul>
+<li>Very early paper outlining the theory behind CTF’s and its preliminary goals</li>
+<li>This tool in itself provides a very good basis for research</li>
+<li>Very similar ideology</li>
+</ul>--
+
+<strong> Mechanics for an effective educational tool </strong>--
+
+<blockquote>
+George Triantafyllakosa, George Palaigeorgioub, Ioannis A. Tsoukalas (2011). Designing educational software with students through collaborative design games: The We!Design&Play framework. Netherlands: Elsevier. Pages 227–242.
+</blockquote>--
+
+<ul>
+<li>multi-sensory and active problem-based learning and critical thinking</li>
+<li>activate prior, diverse knowledge that allows the participants to successfully encounter novel situations</li>
+<li>establish meaningful collaborative learning environments which can improve students’ social skills</li>
+<li>support immediate feedback which informs subsequent decision making</li>
+<li>offer opportunities for self-assessment</li>
+</ul>--
+
+<strong> Where CTFs really shine! </strong>--
+
+<blockquote>
+Bergin, S., & Reilly, R. (2005). The influence of motivation and comfort-level on learning to program. Psychology of programming. pp. 293–304.
+</blockquote>--
+
+<ul>
+<li>Study suggests that students engage more when they’re motivated</li>
+<li>Educational courses that attempt to practically engage with the student can create a more effective learning space</li>
+<li>Briefly discusses the notion of using games to promote student's learning, outlining that motivation thrives in a competitive environment.</li>
+</ul>--
+
+<strong> Educational software design critical evaluation</strong>--
+
+<blockquote>
+Pierre Tchounikine (2011). Computer Science and Educational Software Design. Berlin: Springer Berlin Heidelberg. P39-164.
+</blockquote>--
+
+
+Excellent evaluation of development styles and their effectiveness for educational software. Outlines caveats for the designs, stressing the importance of:--
+
+<ul>
+<li>Modular system design</li>
+<li>User feedback driven development</li>
+<li>Fits in with Agile based methodologies</li>
+<li>Easy to use, robust and interactive</li>
+</ul>--
