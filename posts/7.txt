@@ -1,5 +1,4 @@
-
-Week 8 - Programmatically Using Unit Tests--
+1.8 - Programmatically Using Unit Tests--
 Creating a python wrapper to run unit tests--
 Oct 24 2016--
 

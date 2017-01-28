@@ -1,5 +1,4 @@
-
-Week 9 - Containerisation Clusterfu*k--
+1.9 - Containerisation Clusterfu*k--
 Researching into Vagrant, Docker, Chef and more!--
 Oct 31 2016--
 

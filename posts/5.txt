@@ -1,5 +1,4 @@
-
-Week 5 - Practical & Evaluation Method--
+1.5 - Practical & Evaluation Method--
 Evaluating methods to measure project metrics--
 Oct 6 2016--
 
