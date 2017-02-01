@@ -1,10 +1,82 @@
-2.1 - Week 1--
-Preparing the research and practical work performed--
+2.1 - Expanding The Literature Review--
+Further expanding the literature review--
 Jan 10 2017--
 
-<strong> week 1 <strong>--
 
-This week primarily involved looking through the material utilised to structure the design of the project. This resulted in creating an annotated bibliography:--
+This week primarily involved looking through the material presented previously for te proposal and building on the information through finding articles relating to the project. This was particularly challenging considering how niche the area is, however, the chosen articles provide a fantastic background:--
 
 
-<strong>Critical Evaluation<strong>--
+<blockquote>
+<strong>Literature Review</strong><br>
+Despite the critical importance of computer security, it is often overlooked in both a professional and educational setting. Although many organisations and individuals have invested a large amount of time, effort and expertise into securing their systems, the large majority have not. The literature reviews aims to present a brief overview of the following concepts:--
+<ul>
+<li>Software Security</li>
+<li>The problem that insecure software presents</li>
+<li>How and why hackers are able to exploit systems</li>
+<li>Constraints that developers face during software development.</li>
+<li>Code Review</li>
+<li>Current state of education for secure programming</li>
+<li>Capture The Flag exercises</li>
+<li>Psychology, design patterns and methodologies behind creating gamification tools</li>
+</ul>
+
+<strong>2.1 Software Security</strong><br>
+Enormous progress has been made within the many sub branches of computer security over the years. One that particularly stands out is the field of software security. This has received a lot of attention due to its critical importance, as it is often the central and focal point of systems. The field in itself is still relatively new, however, pioneers such as Michael Howard, David LeBlanc (Michael Howard and David LeBlanc. (2002)) and Gary McGraw (Gary McGraw. (2004)) have been writing about software security since the early 2000s. These visionaries all set set out at the task of tackling an identical non-trivial problem - securing systems. They saw first hand the rate at which computers spread, and as technology quickly became more interconnected - the threats posed against systems became progressively more serious. Today security is seen as not only a privilege, but a right to the end user, however, achieving this is still not trivial.--
+
+Gary McGraw (Gary McGraw. (2004)) defines Software security as the concept of engineering software to be able to function as intended while being subjected to malicious attacks. As a globally recognised authority within the world of security, he attributes the increase in security problems to what he defines as the “trinity of trouble”: connectivity, over extensibility and complexity (Gary McGraw. (2006)). He further states that the solution to this problem is to build security in by incorporating key security constructs into all phases of system development. The key constructs he explicitly outlines are: application risk management, software security best practices and knowledge. He states that in order to make real progress: developers, software architects and users must be educated on software security.--
+
+As technology continues to grow, likewise does the number of software engineers. However, as more software is produced, the risk of vulnerable systems increases. Rick and Chris (Rick Kuhn and Chris Johnson, 2010) provide insight into the sheer scale of the problem by analysing a tool used to record vulnerabilities, known as the National Vulnerability Database (Anon 2016). Their research found that the number of vulnerabilities reported in 2001 increased fourfold by 2006, where the the trend seems to stabilise. They go on to detail the key security constructs mentioned by Gary McGraw, and the positive effect is has had in securing systems. They go on to outline that there is still an enormous amount of work for software developers to adopt these security constructs.--
+
+Nikolai and Djenana (Nikolai Mansourov, Djenana Campara (2011)) look at this problem from a hacker’s perspective, investigating how and why hackers are able to exploit production standard systems. They conclude that hackers group together and share their knowledge as a community, resulting in the production of weaponized tools used to exploit systems. This allows even novice hackers to perform advanced tailored attacks with very little knowledge on a target system. They go onto outline in detail that this is fundamentally made possible by the lack of focus on secure software development. Resulting in the development of insecure code as functionality is seen as a priority, often due to a lack time, knowledge and resources.--
+
+Gunter (Gunter Ollmann (May 2007)) this problem from the developer’s perspective. He outlines that in order to effectively mitigate this problem, developers must acknowledge the threats targeting their code and provide methods to handle said threats. He further states that security features must be outlined in the design process and integrated during the applications development. Adding security measures as an afterthought often results in inconsistent and unpredictable results. However, this can be challenging as developers often lack both time and security knowledge. This is evident with the increase in recorded data breaches announced by large organisations over the past few years (Tom Evans. (2016)).--
+
+
+
+
+<strong>2.2 Code Review & Education Of Security</strong><br>
+Shane, Yasutaka, Bram and Ahmed (Shane McIntosh, Yasutaka Kamei, Bram Adams and Ahmed E. Hassan. (2015)) investigate a well established practice to help secure code, known as code review or peer review. This is the technique of a peer performing a systematic examination of source code. They investigate the effects of this when applied to software development life cycles, both in terms of functionality and security. They conclude that this achieves outstanding results by dramatically saving time and streamlining the development process. They further outline that this reduces the time required for Quality Assurance testing, allowing a lot more focus to be directed towards security. However, in order for this to function developers must share knowledge within the industry. The significance of this practice is outlined by Bacchelli and Bird (Bacchelli A, Bird C (2013), providing insight into how code review has shown positive results in educating developers.--
+
+Michael (Michael N. Johnstone. (2013)) investigates the problem of vulnerable software from an educational perspective. His research concludes that insecure software fundamentally originates from security not being seen as priority during programming courses. Furthermore, that the teaching of secure programming is often seen as an additional extra, or even unnecessary in learning basic to intermediate programming. This is surprising considering that students have shown positive feedback to being taught security constructs from an early stage, as outlined in his research. He presents the supporting data along with the enormous financial figures supporting this argument, and stresses the importance of further research being invested into developing methods to teach security constructs.--
+
+Chris and John (Chris Eagle, John L. Clark. (2004)) analyse one such tool, created to teach ethical hacking, known as Capture The Flag exercises. This is an extremely interesting concept that gamifies hacking to educate the users in a competitive and fun environment. They talk about the concept from its very early stages and outline the key characteristics and ideologies. Over the years this concept has dramatically evolved, as outlined by James (Hale, J 2016) in his research into the effectiveness of educational software in security. Furthermore, he outlines that it has shown extremely effective results in teaching core ethical hacking concepts, and strongly advises for it to be integrated into security course curriculums. This is a commendable example of tool in a similar area that has created a platform to share knowledge effectively in an exciting and unconventional way.--
+
+
+
+<strong>2.3 Gamification & Educational Software</strong>--
+To further understand why gamification tools are so effective, Bergin S and Reilly R (Bergin, S., & Reilly, R. (2005)) provide insight through their research into the psychology of effective learning. They outline that educational techniques that practically engage with the students are more effective; stating that this is a result of students engaging more when they’re motivated. This is due to students experiencing the process of solving a problem, making them more eager to pursue problems in the future they’re challenged by and able to overcome. They then briefly discuss the notion of using conventional games within an educational setting, stating that motivation thrives in a competitive environment.--
+
+George T, George P and Ioannis (George Triantafyllakosa, George Palaigeorgioub, Ioannis A. Tsoukalas (2011)) provide further insight through their research in the designing educational software. They conclude that the following core characteristics are imperative in the creation of an effective teaching tool:--
+
+<ul>
+<li>Multi-sensory and active problem based learning that requires critical thinking.</li>
+<li>Utilisation of prior and diverse knowledge that allows the user to successfully encounter novel situations.</li>
+<li>Establish a meaningful collaborative learning environment which can improve students’ social skills.</li>
+<li>Support immediate feedback, providing information to the user in real time for subsequent decision making.</li>
+<li>Provide opportunities for self-assessment.</li>
+</ul>--
+
+They further define these concepts and go into detail of how these characteristics have shaped large educational tools. Interestingly, capture the flag exercises excel in each of these areas, this is a testament to its innovativeness considering its development in 2005. The significance of this research is that this provides a clear model for the design of an educational system that has shown effective results.--
+
+The research into the design of educational software can then be utilised in conjunction with Pierre’s extensive research (Pierre Tchounikine (2011)) within the field of software development. He investigates and critically evaluates a multitude of development methodologies, specifically evaluating the effectiveness of each in the creation of educational software. However, unlike similar studies, the research not only evaluates each development methodology from an efficiency perspective, but also from a creative perspective. In doing so, this provides an unbiased analysis with a focus on achieving an optimal teaching tool product. The culmination of this research resulted in outlining the following principles to avoid common caveats within design patterns and methodologies:--
+
+<ul>
+<li>Modular system design</li>
+<li>User feedback driven development</li>
+<li>Easy to use, robust and interactive</li>
+<li>Utilisation of an iterative development model as most effective educational tools dramatically change throughout the project’s lifecycle</li>
+<li>Large changes as a result of user feedback should be prioritised and not ignored</li>
+</ul>--
+
+These principles are supported by Renee’s (Renee Troughton. (2012)) research in the creation of gamification software, however, Renee prioritises the importance of having a user feedback driven development above all else. In order to achieve this, the right development methodology should be chosen for the project. Rafael, José, Nuria, Patricia and F.L. Gutiérrez-Vela (Rafael Prieto de Lope, José Rafael López Arcos, Nuria Medina-Medina, Patricia Paderewski, F.L. Gutiérrez-Vela (2017)) provide further insight by outlining that methodologies derived from the Agile Software Development model are ideal for the creation of educational software. This is due to the iterative approach supporting the key development requirements of such a tool.--
+
+The studies presented heavily mention the importance of user testing, Goos and Salomons (Goos, M. & Salomons, A. (22 July 2016)) investigate this problem from an educational software perspective. They outline a multitude of methods utilised to measure educational  tool effectiveness, stating that this is a heavily debated field due to the subjective nature of educational tools. They conclude that the most commonly accepted method is Course Evaluations. This is essentially a questionnaire using a combination of both qualitative and quantitative data, often supported by a reliable metric such as average student grades or time. They further state that this should be integrated into any user testing sessions as this can provide invaluable data that can be utilised for quality control.--
+
+<strong>2.4 Summary</strong><br>
+The literature presented and reviewed as part of this section provides a critical evaluation of the current state of play in software security. Specifically outlining the severity of the computer security problem from both a hacker and developer perspective. This outlines that the primary cause of this problem is due to a lack of secure coding education. This then evaluates how Code Review has shown success in securing code and educating developers. This then discusses Capture The Flag exercises in ethical hacking, and looks into the design, methodology, and testing utilised in educational gamification software.<br>
+Unfortunately, there is no equivalent to Capture The Flag exercises within the field of secure programming. However, based from this prior research, Code Review could be used as a mechanic to gamify teaching secure code practices through experiential learning, using a similar ideology to the Capture The Flag tool mentioned in section 2.2.--
+
+</blockquote>
+
+<strong>Critical Evaluation</strong><br>
+The prior research in the first semester provided a fantastic baseline for further research. The expanded content above attempts to provide a much more detailed insight into what software security is, along with outlining some of the key constructs behind gamification.
