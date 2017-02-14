@@ -79,4 +79,6 @@ Unfortunately, there is no equivalent to Capture The Flag exercises within the f
 </blockquote>
 
 <strong>Critical Evaluation</strong><br>
-The prior research in the first semester provided a fantastic baseline for further research. The expanded content above attempts to provide a much more detailed insight into what software security is, along with outlining some of the key constructs behind gamification.
+The prior research in the first semester provided a fantastic baseline for further research. However, it fundamentally lacked in providing a deep enough  insight into what the current state of software security. Along with failing to provide insight into  the background of educational software.--
+
+The research presented above rectifies these issues and attempts to cover the broad range of cross disciplinary topics used in the project. This is particularly challenging considering the 2000 word limit, meaning that conciseness is key. Overall, this has been monumentally helpful in terms of future system design. The educational software design pattern research is particularly invaluable and has helped refine the project significantly. 
