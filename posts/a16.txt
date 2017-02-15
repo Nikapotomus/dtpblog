@@ -2,5 +2,32 @@
 Preliminary research into the design of the scheduler--
 Feb 6 2017--
 
+This week was spent looking into the developing the main code portion of the project. The scheduler is the back end of the framework that provides the core functionality of the system. This takes the code packages and gamifies the task of fixing the vulnerabilities, while providing a system to store usage data. In order to understand exactly what this segment encompases the functional requirements are clearly outlined:--
+
+<ul>
+<li>System for generating user credentials</li><br>
+<li>Distribute challenge files to student user’s directories</li><br>
+<li>Programmatically and securely execute the code packages periodically</li><br>
+<li>Parse and correlate the code packages output to a state value</li><br>
+<li>Database Interaction</li><br>
+</ul>--
+
+These functional requirements are derived from the desired functionality of the framework and from the architecture presented a few weeks ago. After looking through a lot of documentation and evaluating the best choice for the environment, the system will be adopt the the Python programming language as it closely conforms with the language’s ideologies. This is chosen over other programming languages as it is renowned for its extensive utility support through community created libraries. This is extremely important considering the enormous amount of system operations that are required.--
+
+The majority of this week was spent doing a lot of research into how to tackle these functional specifications. This involved doing a lot of trial and error with a multitude of different libraries to assist in achieving this functionality. This resulting in finding the following libraries which are <strong>VERY</strong> helpful:--
+
+<strong>os</strong>: The OS module in Python provides a way of using operating system dependent functionality. The functions that the OS module provides allows you to interface with the underlying operating system that Python is running on – be that Windows, Mac or Linux.--
+
+<strong>Subprocess</strong>: The subprocess module allows us to spawn processes, connect to their input/output/error pipes, and obtain their return codes.--
+
+<strong>Time</strong>: The Time module provides a way to manage time accurately within the system. This is very important with vital system operations.--
+
+<strong>MySQLdb</strong>: MySQLdb is a thread-compatible interface to the popular MySQL database server that provides the Python database API. This is vital for persistently storing data as this will be achieved through MySQL most likely.--
+
+The culmination of this work is then placed into a flow diagram to shape the general structure of the code base and lay the foundation for future work.--
+
 <img class="img-responsive" src="views/img/diagrams/diagram_scheduler.jpg" alt="">
-<span class="caption text-muted">Caption: System architecture map</span>
+<span class="caption text-muted">Caption: Scheduler flow diagram</span>
+
+<strong>Critical Evaluation</strong><br>
+There was a lot to present this week from the huge amount of technical work performed in tackling the preliminary scheduler design. This involved finding and testing a multitude of libraries to achieve the required functionality. This took a huge amount of time to do thoroughly although this should definitely pay off in future weeks. This is then utilised to create a flow diagram to further outline the design of the component as a whole. This is extremely important considering the number of separate code partitions in the scheduler that interact together. I feel like this should provide a great platform for the rest of the development of the tool, although if this week has taught me anything, it’s that there will be <strong>A LOT</strong> of problem solving in this component...

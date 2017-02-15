@@ -2,5 +2,31 @@
 Problem solving of programmatically using the code packages--
 Feb 14 2017--
 
+This week I decided to focus on tackling how the scheduler uses the code packages created a few weeks ago. This is the core component of the system, hence its priority in the development pipeline as the rest of the system depends on its functionality. The design presented last week provided a concise outline of how the system should operate, this has been extremely useful throughout this week's research and development.--
+
+Firstly I started with looking back at what is required to perform a Unit Test in the <a href="https://phpunit.de/">PHPUnit</a> framework. This requires a code file and a unit testing file in the same directory, and of course a PHP interpreter on the system. This can then be performed by executing the following command:--
+
+<img class="img-responsive" src="views/img/diagrams/diagram_codepackage_3.png" alt="">
+<span class="caption text-muted">Caption: Executing unit test with graphical output</span>
+
+Performing this programmatically is just as straightforward by simply using the subprocess library mentioned in last weeks post. This can then be used to simply call the process from the python script and output the result to a file: --
+
+<img class="img-responsive" src="views/img/diagrams/diagram_scheduler_3.png" alt="">
+<span class="caption text-muted">Caption: Programmatically executing unit test</span>
+
+However, after some serious trial and error I found out that the “+ 2>&1” option must be enabled to output errors to a file as this is vital for parsing. This took me far too long to notice, but thankfully after some testing I managed to catch it!--
+
+Once this was working there was just the case of copying each user's code package file to a temporary directory that can then be executed by the scheduler. This meant creating three users in my development environment for testing and creating a temporary folder. Notably, I created a temp folder with a separate folder for each team. This worked as intended by building from the example presented earlier.--
+
+After some more testing I found a massive problem. In order to perform the system operations I had execute the script as a super user. This meant that the user’s PHP code was also inadvertently being executed as a super user. Obviously this a massive problem and I spent literally a few days banging my head against a wall to fix it. Within Python I found that there are methods in place to drop permissions while executing a script, however, once dropped said permissions cannot be regained.--
+
+This is where I started having to be quite resourceful in terms of figuring out how to get around this problem. I did some research about how other people have gotten around this problem and found a programming concept known as “wrappers”. This is essentially a child script launched from the parent script that performs a basic function. I then used this to create a wrapper around the each user’s code packages to execute them under their permissions as seen below:--
+
 <img class="img-responsive" src="views/img/diagrams/diagram_scheduler_2.png" alt="">
-<span class="caption text-muted">Caption: System architecture map</span>
+<span class="caption text-muted">Caption: Successfully launching tests for multiple user’s vulnerable code files</span>
+
+I then expanded this further to launch each wrapper as a separate thread for maximum efficiency.--
+
+<strong>Critical Evaluation</strong><br>
+Achieving the functionality required this week was definitely very challenging. The extra time invested into solving the problems found during development was well worth the investment.
+I feel very confident that this functions as required for future development. I feel that this system could be improved in the future to perhaps use a Docker container to launch this sub process in an isolated environment but this is definitely a future goal. Overall, this achieves the functional requirements and takes into consideration a multitude of environmental factors within the tool. I’m very pleased!
