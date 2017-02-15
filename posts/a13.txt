@@ -41,7 +41,7 @@ This information is then visualised in a basic flow diagram:--
 <img class="img-responsive" src="views/img/diagrams/diagram_overview.jpg" alt="">
 <span class="caption text-muted">Caption: System architecture map</span>
 
-<strong>Critical Evaluation</strong>
+<strong>Critical Evaluation</strong><br>
 The system presented above clearly outlines a broad structure for the development of the tool. This takes into consideration the extensive background research and tests performed as part of the project. However, the investment of time into creating a modular design is only half the battle. The system has <strong>A LOT</strong> of components interacting with one another in real time, this will require a lot of problem solving.--
 
 The design heavily depends on the use of the container. This component will need to have extensive testing to assure it’s working as intended. It might be worth investing some early development on this component to ensure it will be working as intended. Overall, this has set the foundations to continue development in a clear and concise manner.
