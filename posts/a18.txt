@@ -1,10 +1,5 @@
-2.7 - Week 7--
-Preparing the research and practical work performed--
-Feb 14 2017--
+2.7 - Scheduler Parsing Code Packages--
+Overview of the Code Packages Design--
+ - still in the oven--
 
-<strong> week 4 <strong>--
-
-This week primarily involved looking through the material utilised to structure the design of the project. This resulted in creating an annotated bibliography:--
-
-
-<strong>Critical Evaluation<strong>--
+ <strong>Still in draft</strong>

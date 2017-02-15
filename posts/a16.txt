@@ -1,10 +1,6 @@
-2.5 - Week 5--
-Preparing the research and practical work performed--
+2.5 - Scheduler Overview & Design--
+Preliminary research into the design of the scheduler--
 Feb 6 2017--
 
-<strong> week 4 <strong>--
-
-This week primarily involved looking through the material utilised to structure the design of the project. This resulted in creating an annotated bibliography:--
-
-
-<strong>Critical Evaluation<strong>--
+<img class="img-responsive" src="views/img/diagrams/diagram_scheduler.jpg" alt="">
+<span class="caption text-muted">Caption: System architecture map</span>

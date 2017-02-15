@@ -1,10 +1,12 @@
-2.4 - Week 4--
-Preparing the research and practical work performed--
+2.4 - Unit Testing Code Packages--
+Practically applying Code Packages and some future directions--
 Jan 31 2017--
 
-<strong> week 4 <strong>--
+<img class="img-responsive" src="views/img/diagrams/diagram_codepackage_1.png" alt="">
+<span class="caption text-muted">Caption: System architecture map</span>
 
-This week primarily involved looking through the material utilised to structure the design of the project. This resulted in creating an annotated bibliography:--
+<img class="img-responsive" src="views/img/diagrams/diagram_codepackage_2.png" alt="">
+<span class="caption text-muted">Caption: System architecture map</span>
 
-
-<strong>Critical Evaluation<strong>--
+<img class="img-responsive" src="views/img/diagrams/diagram_codepackage_3.png" alt="">
+<span class="caption text-muted">Caption: System architecture map</span>

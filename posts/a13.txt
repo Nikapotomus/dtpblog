@@ -1,11 +1,47 @@
-2.2 - Week 2--
-Preparing the research and practical work performed--
+2.2 - System Design & Architecture--
+Overview of the system architecture and components--
 Jan 17 2017--
 
-<strong> week 2 <strong>--
+The extensive tests performed and documented last semester in earlier blog posts have helped refine the project significantly. The research last week was a fantastic investment because it provided me with a lot more time to investigate sources that weren't strictly related to computing. This helped give the project a bit more direction in terms of design and development approaches. Last week in the literature review, I mentioned that the research revealed the following characteristics being indicative of an effective teaching tool:--
 
-This week primarily involved looking through the material utilised to structure the design of the project. This resulted in creating an annotated bibliography:--
+<blockquote>
+<ul>
+<li>Multi-sensory and active problem based learning that requires critical thinking.</li>
+<li>Utilisation of prior and diverse knowledge that allows the user to successfully encounter novel situations.</li>
+<li>Establish a meaningful collaborative learning environment which can improve students’ social skills.</li>
+<li>Support immediate feedback, providing information to the user in real time for subsequent decision making.</li>
+<li>Provide opportunities for self-assessment.</li>
+</ul>--
+</blockquote>
+
+However, in order to achieve this, the research outlined that the design and development of the system must follow these core principles:--
+
+<blockquote>
+<ul>
+<li>Modular system design</li>
+<li>User feedback driven development</li>
+<li>Easy to use, robust and interactive</li>
+<li>Utilisation of an iterative development model as most effective educational tools dramatically change throughout the project’s lifecycle</li>
+<li>Large changes as a result of user feedback should be prioritised and not ignored</li>
+</ul>--
+</blockquote>
+
+This information was then used with the tests performed last semester to split the system into four manageable components:--
+
+<strong>Code Packages:</strong> Each user will be provided with vulnerable code, or challenges for short, this will have corresponding unit tests to check the codes functionality and vulnerability status. Each challenge will most likely adopt common business logic issues outlined in the OWASP top 10. --
+
+<strong>Scheduler:</strong> This provides the functionality for the system, performing time based attacks by programmatically executing and parsing the code packages. This should then correlate this data to a predefined state value of either, patched, vulnerable or broken. This data should then persistently stored in a database.--
+
+<strong>Dashboard:</strong> This will visualise the data collected by the scheduler, primarily outlining the state of the code packages and a countdown timer till the next attack. Furthermore, as part of this an admin portal should be created to facilitate tutor options, such as run time for the tool. --
+
+<strong>Containerisation:</strong> In order to provide a secure, stable and distributable tool, the framework will be packaged in a lightweight virtualized environment. To facilitate this, the framework will utilise Vagrant (HashiCorp. (2016)) to dynamically provision a virtual machine. This abstracts the complex system from the user and helps usability.--
+
+This information is then visualised in a basic flow diagram:--
 
 <img class="img-responsive" src="views/img/diagrams/diagram_overview.jpg" alt="">
+<span class="caption text-muted">Caption: System architecture map</span>
 
-<strong>Critical Evaluation<strong>--
+<strong>Critical Evaluation</strong>
+The system presented above clearly outlines a broad structure for the development of the tool. This takes into consideration the extensive background research and tests performed as part of the project. However, the investment of time into creating a modular design is only half the battle. The system has <strong>A LOT</strong> of components interacting with one another in real time, this will require a lot of problem solving.--
+
+The design heavily depends on the use of the container. This component will need to have extensive testing to assure it’s working as intended. It might be worth investing some early development on this component to ensure it will be working as intended. Overall, this has set the foundations to continue development in a clear and concise manner.

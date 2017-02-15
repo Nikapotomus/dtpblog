@@ -1,10 +1,27 @@
-2.3 - Week 3--
-Preparing the research and practical work performed--
+2.3 - Vulnerable Code Packages Overview--
+Research and development of the vulnerabilities to present as part of the prototype--
 Jan 23 2017--
 
-<strong> week 3 <strong>--
+This week has been focused on looking into the first half of the code packages section of the project. As the title suggests, this is the vulnerable code that the users of the system will be tasked to fixed. However, this is unfortunately not as simple as just writing some vulnerable code and asking someone to fix it. Obviously within the system there must be some sort of method to determine the code’s state. The vulnerable code and the means to determine said code’s state are known as a code package, hence the name.--
 
-This week primarily involved looking through the material utilised to structure the design of the project. This resulted in creating an annotated bibliography:--
+The previous research and development on this performed last semester outlined that the best possible way to tackle facilitating this functionality is through Unit Testing. This method aims to achieve identical results through “emulating” vulnerabilities in a controlled environment. An example of this can be seen below:--
 
+<img class="img-responsive" src="views/img/diagrams/diagram_codepackage_1.png" alt="">
+<span class="caption text-muted">Caption: Example Vulnerable Code Snippet</span>
 
-<strong>Critical Evaluation<strong>--
+This is a simple access method function that returns true if access is granted. The functional and vulnerable state of such code can easily be determined based on the response from the method. This is the platform on which code packages are based from. For the purposes of this project, the deliverable of the system will have five working code packages illustrating vulnerabilities derived from the <a href="https://www.vagrantup.com/l">OWASP top 10</a>. These include:--
+
+<ul>
+<li>SQL Injection</li><br>
+<li>Unrestricted File Upload</li><br>
+<li>Broken Authentication and Session Management</li><br>
+<li>Broken Validation Regex</li><br>
+<li>Command Injection</li><br>
+</ul>--
+
+These examples are obviously a long way away from the simple code snippet. Mainly because these examples actually require certain external environment variables / resources in order to emulate. In order to facilitate this, as outlined in the previous weeks blog post, the system will be held in a container that can initialise the required resources on start up. This means that almost anything can be emulated in this framework. In the long term it’s intended for this to be community driven, meaning anyone can write a code package and illustrate a coding problem - hence the design!--
+
+The rest of this week was spent working on "emulating" this vulnerabilities, building from the very basic concept presented for demo purposes. There was some preliminary work on this last semester which should reduce the workload a little bit as this would be overwhelming otherwise.
+
+<strong>Critical Evaluation</strong><br>
+This section of the project is the most forward facing component for obvious reasons. This will be by far endure the most scrutiny from the end user and will require a lot amount of user testing. This definitely should not be underrated. With this in mind, as outlined in last semester's posts, these vulnerabilities will be created in the PHP programming language. This is chosen specifically because it is an extremely popular dynamic programming language. This inherently means that the language is less verbose and potentially meaning that it is arguably more readable(?). I thought I would mention this as this is a long term problem and this is something I would really, really like to test!
