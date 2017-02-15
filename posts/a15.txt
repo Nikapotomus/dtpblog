@@ -2,11 +2,26 @@
 Practically applying Code Packages and some future directions--
 Jan 31 2017--
 
+This week is all about making progress on the code packages and more importantly, unit testing them. Last week was spent creating the vulnerable code examples in a fashion that could be easily unit tested. This was a lot more time consuming than I initial anticipated and as a result of this I had to put in some extra time to play catch up.--
+
+Once this was finished I got some feedback from colleagues regarding the vulnerable examples. After some tweaking they seemed to think the examples were concise / understandable which is a great starting point to go into further testing. The feedback outlined that have clearly commented code <strong>REALLY</strong>helps. This might seem obvious but it’s definitely something worth mentioning. This also outlined that simplicity is key and over thinking the scenarios can quickly lead to confusion.--
+
+The next stage and main course of this week’s work was spent on unit testing the vulnerable code examples. I briefly spoke about how this will be achieved in last semester in the 1.8 blog post, but to reiterate, the system will use the <a href="https://phpunit.de/">PHPUnit</a> unit testing framework to achieve the desired functionality. This is chosen specifically because it’s the largest and most well known unit testing framework for the PHP programming language. To illustrate how this works, I’m taking the example I used from last week:--
+
 <img class="img-responsive" src="views/img/diagrams/diagram_codepackage_1.png" alt="">
-<span class="caption text-muted">Caption: System architecture map</span>
+<span class="caption text-muted">Caption: Simple vulnerable access system example</span>
+
+Firstly to set a baseline - unit testing is the concept of testing individual units, methods or functions of code to determine their outcome by asserting an expected result. This can be used to determine the vulnerable code depending on the result of the methods when passed certain values. An example of this can be seen below:--
 
 <img class="img-responsive" src="views/img/diagrams/diagram_codepackage_2.png" alt="">
-<span class="caption text-muted">Caption: System architecture map</span>
+<span class="caption text-muted">Caption: Unit testing for functionality and vulnerability status’</span>
+
+This tests the simple access method to determine its functionality and vulnerability status. The functionality tests assert if the value returned from the access method are as they should be in order to be functional. The vulnerability “exploits” the known vulnerability to see if access has been granted by asserting that the value returned will be true. This can then be executed by using the following graphical output command in the framework:--
 
 <img class="img-responsive" src="views/img/diagrams/diagram_codepackage_3.png" alt="">
-<span class="caption text-muted">Caption: System architecture map</span>
+<span class="caption text-muted">Caption: Executing unit test with graphical output</span>
+
+This then in turn returns a simple “[x]” to outline which unit tests have passed. If a unit test fails it simply returns an empty set of bracket like so “[ ]”. This took a lot of problem solving with significant amount of trial and error to figure out. The rest of the week was spent using the system explained to meticulously test the vulnerable code snippets for functionality and vulnerability states.--
+
+<strong>Critical Evaluation</strong>
+The system explained is <strong>super</strong> cool because this is totally customisable! However, this entirely relies on the creator to design the code package well and more importantly, accurately reflect a fixed vulnerability. There would be nothing worse than a false positive / false negative for a fix. This is something that I’ve thought of a lot and I can’t really see a work around it other than simply investing a lot of resources into creating well made code packages. Overall, I’m really happy with the work this week and I feel like I’ve made a lot of progress. This is efficient, lightweight and probably easily integratable into a programmatic setting!
