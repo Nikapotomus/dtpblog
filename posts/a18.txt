@@ -1,5 +1,26 @@
-2.7 - Scheduler Parsing Code Packages--
-Overview of the Code Packages Design--
- - still in the oven--
+2.8 - Recap, Testing and Moving Forward--
+Merging the practical implementations together with--
+ - <strong>Mar 02 2017</strong>--
 
- <strong>Still in draft</strong>
+So after completing the functionality last week of the scheduler, the project can finally be merged together with the work from last semester. This is a massive relief as thanks to modular design this quite literally took seconds to simply add a shared folder into the dynamic machine, for further details look back to <a href="https://nikolak.co.uk/week7.php">this post</a>.--
+
+The next step of the system was creating the persistent storage which was achieved through using a very basic decoupled MySQL database structure. To interact with the database in Python the MySQLdb library makes it very very straight forward. I won't go into further detail on this as it was very simple to add onto the system, however, <a href="https://www.tutorialspoint.com/python/python_database_access.htm">this tutorial</a> guided the process and is worth mentioning as I would just be repeating what it already says.--
+
+Once this was all complete I moved onto testing the system, as discussed with my supervisor this aimed to extract the ease of use, learning and usability of the system. In order to obtain this information, the testing method utilised for the project is the course evaluation testing method, as advised by the background research performed last semester. This is a multi dimensional testing method that uses questionnaires supported by usage metrics to extract the aforementioned points. The questionnaires are available here: <a href="https://goo.gl/forms/7TpPznoVuBC5bAPJ3">before questionnaire for background information</a>, and <a href="https://goo.gl/forms/DiXPlWiuoURkqi393">after questionnaire for ease of X results</a>.--
+
+The testing sessions consisted of 12 participants from games / computing courses using the tool for 45 minutes with 5 minute attack intervals. The pre-usage questionnaire revealed that the participants were all intermediate programmers. Despite this, half of the participants had little to no experience with secure programming. To compensate for this, the testing session grouped the participants based on their knowledge of secure programming into groups of two or three. The participants were then given a brief introduction on how to use the system and then let loose. The final view of the dashboard can be seen below:--
+
+<img class="img-responsive" src="views/img/diagrams/usageResults.png" alt="">
+<span class="caption text-muted">Caption: Dashboard view from after user testing</span>
+
+From a quick overview of these operational metrics it is clear that the participants were able to use the system and able to fix the vulnerable code challenges, however, there does seem to be a large spread in the results as outlined by the scores. The post questionnaire provides further insight to this by outlining that the system was easy to understand, use, and operate. However, the qualitative data outlined that the spread of results is attributed to the lack of opportunities for self assessment in the system. This is due to the system only providing feedback after an attack. Despite the flaw in the feedback mechanism, the participants believed that using the system made them raise their awareness of secure programming; two participants even stated that they were motivated to pursue further education on the subject.--
+
+These exceptional results are further supported by 100% of the participants stating that they believed extended use of the system would not only improve their knowledge of secure programming and general programming in the long term, but also that this style of exercise would benefit existing programming courses.--
+
+<strong>Critical Evaluation</strong><br>
+The results clearly outline that the system was extremely effective with the small test group of 12 participants. The fact that the participants found the system ease to understand, use, and operate is exceptional. This is further amplified by the participants finding the system fun and enjoyable to use.--
+
+All of this is great and this does answer the research question set out by the project, but it is worth acknowledging that the participants testing the system were not educational experts. In order to take this project further and make more reliable results, the system should be tested with educational experts designing programming course curricula. Overall, I'm very happy with the findings!--
+
+<strong>What's next?</strong><br>
+Now that the system has been designed, developed, and tested - this concludes the practical or execution segment of the project, meaning that the blog is over! The next step is to work on the written component which will be directed through verbal communication with my supervisor.

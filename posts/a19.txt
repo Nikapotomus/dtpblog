@@ -1,3 +1,0 @@
-2.8 - Vulnerable Code Packages Overview--
-Overview of the Code Packages Design--
-- still in the oven--
